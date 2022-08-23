@@ -1,0 +1,360 @@
+body {
+    margin: auto 0;
+    padding: auto 0;
+}
+/* Стили для хедера */
+
+.header {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 109px;
+    margin-bottom: 40px;
+    margin-right: 110px;
+    text-transform: uppercase;
+    font-size: 14px;
+    justify-content: space;
+    width: 1178px;
+    height: 52px;
+    /* background-color: gray; */
+}
+
+.header__link {
+    padding-right: 60px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__list {
+    display: inline-flex;
+    align-self: center;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 19px;
+    padding: 0px;
+    grid-gap: 20px;  /* расстояние между ссылками */
+}
+
+.contact__us {
+    align-self: center;
+    font-weight: 700;
+    padding: 0px;
+    font-style: normal;
+    line-height: 19px;
+    margin-left: 677px;
+}
+
+.img__search {
+    margin-right: 23px;
+    align-self: center;
+}
+
+/* Стили для мейн банера*/
+
+.banner {
+    display: flex;
+    margin:0;
+    padding:0;
+    width: 1180px;
+    height: 411px;
+    margin: 0px 110px;
+    margin-top: 129px;
+    background-color: #EEE4DB;
+    background-size: 1180px 411px;
+    background-repeat: no-repeat;
+}
+
+.banner__list {
+    margin:0;
+    padding:0;
+    height: 350px;
+}
+
+.banner__list_items {
+    margin:0;
+    padding:0;
+
+}
+
+.banner__page {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 73px;
+    color: rgba(30, 6, 6, 0.05);
+    margin: 0;
+    margin-top: 17px;
+    margin-left: 28px;
+}
+
+.banner__img {
+    display: flex;
+    width: 635.49px;
+    height: 461px;
+    position: absolute;
+    left: 555px;
+    top: 142px;
+}
+
+.banner__title {
+    margin: 0;
+    margin-left: 133px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1E0606;
+    width: 307px;
+}
+
+.banner__text {
+    margin: 20px 0px;
+    margin-left: 133px;
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+}
+
+.button {
+    margin: 0;
+    margin-left: 133px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 9px 22px;
+    gap: 10px;
+    background: #000000;
+    }
+
+.banner__ship {
+    margin: 0px;
+    display: flex;
+    position: absolute;
+    width: 452px;
+    height: 17px;
+    top: 603px;
+    background: #C29974;
+    padding: 11px 364px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+/* Стили для мейн категорий*/
+
+.category {
+    display: inline-block;
+    width: 1180px;
+    height: 421px;
+    padding-left: 110px;
+    padding-top: 90px;
+    margin: auto 0;
+}
+
+.category__title {
+    padding: auto 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.category__list {
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    display: inline-flex;
+    grid-gap: 20px;
+}
+
+.category__list_items {
+    margin: 0;
+    display: flex;   
+    position: relative;
+    width: 280px;
+    height: 270px;
+}
+
+.category__name {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.category__swapper {
+    display: inline-flex;
+    grid-gap: 6px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.button__swapper {
+    background: rgba(112, 187, 220, 0.2);
+    width: 37px;
+    height: 37px;
+    border: 0px;
+}
+
+.swapper_text {
+    width: 580px;
+    height: 44px;
+    margin: auto 0;
+    padding-left: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.delivery {
+    display: flex; 
+    margin-left: 110px;
+    margin-top: 90px;
+    width: 1080px;
+    height: 559px;
+}
+
+.delivery__banner {
+    width: 480px;
+    height: 559px;
+}
+
+.delivery__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 472px;
+    margin-top: 30px;
+    margin-left: 60px;
+    }
+
+.delivery__title {
+    padding-left: 61px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin: 0;
+}
+
+.delivery__list_items_active {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+    margin-top: 6px;
+    margin-right: 217px;
+}
+
+.delivery__text_active {
+    background-color: rgba(112, 187, 220, 0.2);
+    background-size:  11px 180px 11px 60px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 60px;
+}
+
+.delivery__list_items {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+    padding-left: 61px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+}
+
+.delivery_text {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+        margin-top: 30px;
+    margin-left: 61px;
+
+}
+
+.learn_more {
+    margin-left: 61px;
+    margin-top: 26px;
+    background-color: #8f8f8f;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 9px 22px;
+    margin-right: 331px;
+}
+
+.company {
+    margin: 0;
+    margin-left: 110px;
+    margin-top: 90px;
+    width: 1180px;
+    height: 61px;
+    display: flex;
+}
+
+.company__list {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    grid-gap: 127px;
+    opacity: 0.8;
+    
+}

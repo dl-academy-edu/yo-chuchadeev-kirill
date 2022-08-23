@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/normolize.css">
     <title>Catalog</title>
 </head>
 <body>
-    <header>
-        <a href="/index.html">
-            <img src="/static/icons/logoDlk.svg" alt="DLK">
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/pages/blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="/pages/catalog.html">Catalog</a>
-                </li>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="/pages/contact_us.html">
-            <img src="/static/icons/buttonSearch.svg" alt="search">
-            Contact  Us
-        </a>
-    </header>
+    <header class="header">
+        <a class="header__link" href="/index.html">
+           <img class="logo_dlk" src="/static/icons/logoDlk.svg" alt="DLK">
+       </a>
+       <nav class="nav">
+           <ul class="nav__list">
+               <li class="nav__list_items">
+                   <a class="nav__list_link" href="/pages/blog.html">Blog</a>
+               </li>
+               <li class="nav__list_items">
+                   <a class="nav__list_link" href="/pages/catalog.html">Catalog</a>
+               </li>
+               <li class="nav__list_items">
+                   <a class="nav__list_link" href="#">About Us</a>
+               </li>
+           </ul>
+       </nav>
+       <a class="contact__us" href="/pages/contact_us.html">
+           <img class="img__search" src="/static/icons/buttonSearch.svg" alt="search">
+           Contact  Us
+       </a>
+   </header>
     <main>
         <section>
             <h1>Category Products</h1>

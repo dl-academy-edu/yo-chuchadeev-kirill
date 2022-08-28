@@ -44,7 +44,7 @@
                     <p class="banner__page">01</p>
                     <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
                     <p class="banner__text">Designed in Slovenia</p>
-                    <button class="button">EXPLORE NOW</button>
+                    <button class="button_explore">EXPLORE NOW</button>
                     <img class="banner__img" src="./static/image/mainBanner.png" alt="banner">
                 </li>
                 <!-- <li>
@@ -79,17 +79,17 @@
                     <p class="category__name">Apparel <br> kids</p>
                 </li>
                 <li class="category__list_items"> 
-                    <img  class="category__img"src="./static/image/category2.jpg" alt="Holiday shop">
+                    <img  class="category__img" src="./static/image/category2.jpg" alt="Holiday shop">
                     <p class="category__name">Holiday <br> shop</p>
                 </li>
                 <li class="category__list_items">
                     <a href="/pages/toys.html">
-                        <img  class="category__img"src="/static/image/category3.jpg" alt="Toys">
+                        <img  class="category__img" src="/static/image/category3.jpg" alt="Toys">
                     </a>
                     <p class="category__name">Toys</p>
                 </li>
                 <li class="category__list_items">
-                    <img  class="category__img"src="./static/image/category4.jpg" alt="Accessories">
+                    <img  class="category__img" src="./static/image/category4.jpg" alt="Accessories">
                     <p class="category__name">Accessories</p>
                 </li>
             </ul>
@@ -100,9 +100,7 @@
                 <li class="category__swapper_right">
                     <button class="button__swapper"><img src="./static/icons/buttonRight.svg" alt="Button right"></button>
                 </li>
-                <div class="">
-                    <p class="swapper_text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
-                </div>
+                <p class="swapper_text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
             </ul>
         </section>
         <section class="delivery">
@@ -133,69 +131,113 @@
             </ul>
         </section>
         <section>
-            <ul>
-                <li>
-                    <p>Design Life Kids</p>
-                    <p>About Us</p>
-                    <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                    <a href="#">BUY NOW</a>
+            <ul class="about_us">
+                <li class="design_life_kids">
+                    <p class="design__title">Design Life Kids</p>
+                    <p class="design__subtitle">About Us</p>
+                    <p class="design__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    <a class="button_buy" href="#">BUY NOW</a>
                 </li>
-                <li>
-                    <p>Contacts</p>
-                    <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                    <map name="Contacts"></map>
+                <li class="contacts">
+                    <p class="contacts__title">Contacts</p>
+                    <p class="contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    <map name="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1186.2867715655852!2d49.29056910655404!3d53.51181304808484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1661362493320!5m2!1sru!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </map>
                 </li>
             </ul>
         </section>
     </main>
-    <footer>
-        <section>
-            <p>Navigation</p>
-            <hr>
-            <a href="#">About Us</a>
-            <a href="./pages/blog.html">Blog</a>
-            <a href="#">Design Services</a>
-            <a href="#">Featured On</a>
-            <a href="#">2018 Holiday Catalog</a>
-            <a href="#">Shop By Designer</a>
-        </section>
-        <section>
-            <p>Customer Information</p>
-            <hr>
-            <a href="./pages/contact_us.html">Contact Us</a>
-            <a href="#">Sale Exclusions</a>
-            <a href="#">Shipping & Returns</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Search</a>
-        </section>
-        <section>
-            <p>Connect</p>
-            <label>
-                <input type="email" required placeholder="Email">
-            </label>
-            <button>Join</button>
-            <img src="./static/icons/logoFacebook.svg" alt="logo_facebook">
-            <img src="./static/icons/logoTwitter.svg" alt="logo_twitter">
-            <img src="./static/icons/logoPinterest.svg" alt="logo_pinterest">
-            <img src="./static/icons/logoInstagram.svg" alt="logo_instagram">
-        </section>
-        <hr>
-        <section>
-            <p>Company Rating</p>
-            <input type="radio" id="star-5" name="rating" value="5">
-                <label for="star-5" title="5"></label>	
-            <input type="radio" id="star-4" name="rating" value="4">
-                <label for="star-4" title="4"></label>    
-            <input type="radio" id="star-3" name="rating" value="3">
-                <label for="star-3" title="3"></label>  
-            <input type="radio" id="star-2" name="rating" value="2">
-                <label for="star-2" title="2"></label>    
-            <input type="radio" id="star-1" name="rating" value="1">
-                <label for="star-1" title="1"></label>
-        </section>
-        <p>Copyright © 2018 Dlk • Design Life Kids</p>
-        <a href="#">Web Design — Direct Line Development</a>
+    <footer class="footer">
+        <div class="footer__list">
+            <section class="footer__nav">
+                <p class="footer__title">Navigation</p>
+                <hr class="line">
+                <ul class="footer__nav_list">
+                    <li class="footer__nav_list_items">                
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="footer__nav_list_items">              
+                        <a href="./pages/blog.html">Blog</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Design Services</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Featured On</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">2018 Holiday Catalog</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Shop By Designer</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__nav">
+                <p class="footer__title">Customer Information</p>
+                <hr class="line">
+                <ul class="footer__nav_list">
+                    <li class="footer__nav_list_items">
+                        <a href="./pages/contact_us.html">Contact Us</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Sale Exclusions</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Shipping & Returns</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__nav">
+                <p class="footer__title">Connect</p>
+                <hr class="line">
+                <div class="input_email">
+                    <label class>
+                        <input type="email" required placeholder="Email" class="label__email">
+                    </label>
+                    <button class="button__join">Join</button>
+                </div>
+                <div class="footer__logo">
+                    <ul class="footer__list_logo">
+                        <li><img src="./static/icons/logoFacebook.svg" alt="logo_facebook"></li>
+                        <li><img src="./static/icons/logoTwitter.svg" alt="logo_twitter"></li>
+                        <li><img src="./static/icons/logoPinterest.svg" alt="logo_pinterest"></li>
+                        <li><img src="./static/icons/logoInstagram.svg" alt="logo_instagram"></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <hr class="line">
+        <div class="footer__info">
+            <section class="footer__rating">
+                <p class="footer__title">Company Rating</p>
+                <div class="rating-area">
+                    <input type="radio" id="star-5" name="rating" value="5">
+                    <label for="star-5" title="Оценка «5»"></label>	
+                    <input type="radio" id="star-4" name="rating" value="4">
+                    <label for="star-4" title="Оценка «4»"></label>    
+                    <input type="radio" id="star-3" name="rating" value="3">
+                    <label for="star-3" title="Оценка «3»"></label>  
+                    <input type="radio" id="star-2" name="rating" value="2">
+                    <label for="star-2" title="Оценка «2»"></label>    
+                    <input type="radio" id="star-1" name="rating" value="1">
+                    <label for="star-1" title="Оценка «1»"></label>
+                </div>
+            </section>
+            <p class="footer__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+            <a class="footer__link" href="#">Web Design — Direct Line Development</a>
+        </div>
+
     </footer>
 </body>
 </html>

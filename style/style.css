@@ -15,7 +15,6 @@ body {
     justify-content: space;
     width: 1178px;
     height: 52px;
-    /* background-color: gray; */
 }
 
 .header__link {
@@ -30,8 +29,6 @@ body {
     display: inline-flex;
     align-self: center;
     font-weight: 400;
-    font-style: normal;
-    line-height: 19px;
     padding: 0px;
     grid-gap: 20px;  /* расстояние между ссылками */
 }
@@ -40,8 +37,6 @@ body {
     align-self: center;
     font-weight: 700;
     padding: 0px;
-    font-style: normal;
-    line-height: 19px;
     margin-left: 677px;
 }
 
@@ -50,19 +45,16 @@ body {
     align-self: center;
 }
 
-/* Стили для мейн банера*/
+/* Стили для мейна*/
 
 .banner {
     display: flex;
-    margin:0;
-    padding:0;
     width: 1180px;
     height: 411px;
     margin: 0px 110px;
     margin-top: 129px;
     background-color: #EEE4DB;
     background-size: 1180px 411px;
-    background-repeat: no-repeat;
 }
 
 .banner__list {
@@ -74,15 +66,12 @@ body {
 .banner__list_items {
     margin:0;
     padding:0;
-
 }
 
 .banner__page {
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 200;
     font-size: 60px;
-    line-height: 73px;
     color: rgba(30, 6, 6, 0.05);
     margin: 0;
     margin-top: 17px;
@@ -91,7 +80,7 @@ body {
 
 .banner__img {
     display: flex;
-    width: 635.49px;
+    width: 635px;
     height: 461px;
     position: absolute;
     left: 555px;
@@ -121,23 +110,19 @@ body {
     color: #1E0606;
 }
 
-.button {
-    margin: 0;
-    margin-left: 133px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
+.button_explore {
+    display: inline;
     font-size: 16px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
     padding: 9px 22px;
-    gap: 10px;
-    background: #000000;
-    }
+    font-weight: 700;
+    line-height: 22px;
+    background-color: #000000;
+    border: 0;
+    margin-left: 133px;
+    color: #FFFFFF;
+}
 
 .banner__ship {
     margin: 0px;
@@ -148,42 +133,31 @@ body {
     top: 603px;
     background: #C29974;
     padding: 11px 364px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px;
     font-size: 12px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
+    font-weight: 700;
 }
 
 
-/* Стили для мейн категорий*/
 
 .category {
     display: inline-block;
     width: 1180px;
-    height: 421px;
     padding-left: 110px;
     padding-top: 90px;
     margin: auto 0;
 }
 
 .category__title {
-    padding: auto 0;
-    margin: 0;
     font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
     font-size: 38px;
-    line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
 }
 
 .category__list {
-    margin: 0;
     padding: 0;
     padding-top: 30px;
     display: inline-flex;
@@ -191,26 +165,20 @@ body {
 }
 
 .category__list_items {
-    margin: 0;
-    display: flex;   
+    display: block;
     position: relative;
-    width: 280px;
-    height: 270px;
+    text-align: center;
 }
 
 .category__name {
-    margin: 0;
     position: absolute;
     top: 50%;
     width: 100%;
-    text-align: center;
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 32px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
@@ -235,9 +203,6 @@ body {
     height: 44px;
     margin: auto 0;
     padding-left: 20px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
@@ -270,10 +235,7 @@ body {
 .delivery__title {
     padding-left: 61px;
     font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
     font-size: 38px;
-    line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
     margin: 0;
@@ -281,10 +243,8 @@ body {
 
 .delivery__list_items_active {
     font-family: 'Crimson Text';
-    font-style: italic;
     font-weight: 700;
     font-size: 26px;
-    line-height: 34px;
     color: #1E0606;
     margin-top: 6px;
     margin-right: 217px;
@@ -300,10 +260,7 @@ body {
 
 .delivery__list_items {
     font-family: 'Crimson Text';
-    font-style: italic;
-    font-weight: 400;
     font-size: 26px;
-    line-height: 34px;
     color: #1E0606;
     padding-left: 61px;
     padding-top: 11px;
@@ -313,32 +270,25 @@ body {
 
 .delivery_text {
     margin: 0;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
-        margin-top: 30px;
+    margin-top: 19px;
     margin-left: 61px;
-
+    font-weight: 400;
 }
 
 .learn_more {
-    margin-left: 61px;
-    margin-top: 26px;
-    background-color: #8f8f8f;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
+    display: inline;
+    width: 100px;
+    background-color: #000000;
     font-size: 16px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    font-weight: 700;
     text-transform: uppercase;
     padding: 9px 22px;
-    margin-right: 331px;
+    margin-left: 61px;
+    margin-top: 26px;
+    color: #ffffff;
 }
 
 .company {
@@ -356,5 +306,288 @@ body {
     display: inline-flex;
     grid-gap: 127px;
     opacity: 0.8;
-    
+    vertical-align: middle;
+}
+
+
+.about_us {
+    display: flex;
+    margin-left: 110px;
+    margin-top: 90px;
+    margin-right: 147px;
+    padding: 0;
+}
+
+.design_life_kids{
+    padding-left: 30px;
+    position: relative;
+}
+
+.design_life_kids::after {
+    content: '';
+    display: block;
+    width: 543px;
+    height: 228px;
+    background: #E1F0F7;
+    position: absolute;
+    z-index: -1;
+    top: 26px;
+    left: 0px;
+}
+
+.design__title {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.design__subtitle{
+    font-family: 'Crimson Text';
+    font-size: 26px;
+    padding: 10px 0px;
+}
+
+.design__text {
+    padding-right: 30px;
+    width: 483px;
+}
+
+.button_buy {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 9px 22px;
+    font-weight: 700;
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.contacts {
+    margin-left: 57px;
+    padding-left: 30px;
+    margin-right: 147px;
+    position: relative;
+}
+
+.contacts::after {
+    content: '';
+    display: block;
+    width: 543px;
+    height: 209px;
+    background: #E1F0F7;
+    position: absolute;
+    z-index: -1;
+    top: 26px;
+    left: 0px;
+}
+
+.contacts__title {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.contacts__text {
+    padding-right: 30px;
+    padding-top: 20px;
+    width: 483px;
+    padding-bottom: 30px;
+}
+
+
+
+
+/* стили для футера */
+
+.footer {
+    background-color: #434343;
+    padding: 100px 110px;
+    display: block;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.footer__list {
+    display: inline-flex;
+    grid-gap: 20px;
+}
+
+.footer__nav_list {
+    display: block;
+    width: 380px;
+    margin: 28px 0px;
+    color: #FFFFFF;
+}
+
+.footer__nav_list_items {
+    margin-bottom: 15px;
+}
+
+.footer__title {
+    color: #AAAAAA;
+    margin-bottom: 23px;
+}
+
+.line {
+    border: none;
+    border-top: 1px solid #666666;
+}
+
+.input_email {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+}
+
+.label__email {
+    margin: 25px 0px;
+    padding: 0;
+    border: 0;
+    width: 380px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #666666;
+    color: #EBEBEB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-family: 'Open Sans';
+    outline: none;
+}
+
+.label__email::placeholder {
+    color: #EBEBEB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-family: 'Open Sans';
+}
+
+.label__email:focus {
+    outline: 1px solid white;
+}
+
+.button__join {
+    display: flex;
+    padding: 0;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    background-color: #000000;
+    text-transform: uppercase;
+    font-style: normal;
+    padding: 9px 22px;
+    font-weight: 700;
+    line-height: 22px;
+    border: 0;
+}
+
+.button__join {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+}
+
+.footer__list_logo {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.footer__info {
+    display: flex;
+    margin-top: 23px;
+}
+
+.footer__rating {
+    display: flex;
+}
+
+.footer__title {
+    margin: 0;
+    padding: 0;
+    padding-right: 25px;
+    padding-bottom: 23px;
+    color: #AAAAAA;
+}
+
+.footer__copyright{
+    margin: 0;
+    margin-left: 155px;
+    margin-right: 109px;
+    color: #FFFFFF;
+}
+
+.footer__link {
+    color: #A2A2A2;
+}
+.footer__link:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.footer__nav_list_items:hover {
+    opacity: 0.5;
+}
+
+.footer__nav_list_items:active{
+    opacity: 0.2;
+}
+
+
+
+
+
+
+
+
+/* рейтинг */
+
+.rating-area {
+	overflow: hidden;
+    margin: 0;
+    width: 97px;
+}
+
+.rating-area:not(:checked) > input {
+	display: none;
+}
+
+.rating-area:not(:checked) > label {
+	float: right;
+    margin: 0;
+	padding: 0;
+	cursor: pointer;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+
+.rating-area > input:checked ~ label {
+	color: #C29974;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: #836E5B;
+}
+
+/* .rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label, */
+.rating-area > label:hover ~ input:checked ~ label {
+	color: #C29974;
+}
+
+.rate-area > label:active {
+	position: relative;
 }

@@ -1,0 +1,93 @@
+/* стили для мейн блог */
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.category {
+    display: block;
+    margin: 0px 110px;
+}
+
+.title_category {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+.page {
+    font-family: 'Crimson Text';
+    font-size: 20px;
+    font-style: italic;
+}
+
+.active {
+    opacity: 0.5;
+}
+
+.page__next {
+    margin: 0px 20px;
+}
+
+.blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.blog__list_items {
+    width: 380px;
+}
+
+.blog__date{
+    color: #818181;
+    margin-top: 9px;
+    margin-bottom: 7px;
+}
+
+.blog__title {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 31px;
+}
+
+.blog__info {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.pages{
+    display: flex;
+    /* margin: 0px 113px 60px 113px; */
+    vertical-align: middle;
+
+}
+
+.pages__list {
+    display: flex;
+    gap: 64px;
+    margin-left: 467px;
+    margin-right: 467px;
+    align-items: center;
+}
+
+.pages__list_items {
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    font-family: 'Montserrat';
+}
+
+.pages_active {
+    color: #C29974;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Montserrat';
+}

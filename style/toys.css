@@ -1,0 +1,226 @@
+/* стили для мейна */
+
+.category {
+    display: block;
+    margin-bottom: 50px;
+    margin-left: 110px;
+}
+
+.title_category {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+.page {
+    font-family: 'Crimson Text';
+    font-size: 20px;
+    font-style: italic;
+}
+
+.active {
+    opacity: 0.5;
+}
+
+.page__next {
+    margin: 0px 20px;
+}
+
+.filter__title {
+    display: none;
+}
+
+.filter {
+    background-color: rgba(125, 151, 218, 0.2);
+    padding-left: 110px;
+    display: flex;
+}
+
+
+.filter__list {
+    display: flex;
+}
+
+.filter__list_items {
+    display: block;
+}
+
+.filter__name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 42px;
+}
+
+.filter__range {
+    margin-left: 5px;
+    margin-right: 14px;
+}
+
+.filter__cost_range {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+
+input[type=range] {
+    width: 188px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    background: #ffffff;
+    border: 8px solid #C29974;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+    margin-top: -10px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 4px;
+    background-color: rgb(119, 119, 119);
+    /* opacity: 0.5; */
+}
+
+.filter__color {
+    width: 77px;
+    margin-left: 94px;
+    margin-bottom: 42px;
+}
+
+.input__color {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-right: 6px;
+    width: 19px;
+    height: 19px;
+}
+
+.filter__delivery {
+    margin-left: 124px;
+    width: 131px;
+}
+
+.input__delivery {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.input_radio__delivery {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.filter__amount {
+    margin-left: 69px;
+}
+
+.label__amount {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 80px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter__amount input[type=radio] {
+    display: none;
+}
+
+.label__amount:hover {
+    background-color: #EDDEEB;
+}
+
+.filter__radio_button {
+    display: flex;
+    margin-right: 60px;
+}
+
+.input__amount:checked + label {
+    background-color: #F3D0DB;
+}
+
+.filter__submit {
+    margin-top: 79px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 9px 22px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.filter__submit:hover {
+    cursor: pointer;
+    background-color: #C29974;
+}
+
+.catalog {
+    padding: 60px 110px 50px 110px;
+}
+
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.catalog__list_items {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    height: 497px;
+}
+
+.catalog__items_name {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 19px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.catalog__items_price {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+.pages{
+    display: flex;
+    margin: 0px 113px 60px 113px;
+}
+
+.pages__list {
+    display: flex;
+    gap: 64px;
+    margin-left: 467px;
+    margin-right: 467px;
+    align-items: center;
+}
+
+.pages__list_items {
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    font-family: 'Montserrat';
+}
+
+.pages_active {
+    color: #C29974;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Montserrat';
+}

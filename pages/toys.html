@@ -6,8 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/common.css">
     <link rel="stylesheet" href="/style/normolize.css">
+    <link rel="stylesheet" href="/style/toys.css">
     <title>Toys</title>
 </head>
 <body>
@@ -32,118 +37,136 @@
            <img class="img__search" src="/static/icons/buttonSearch.svg" alt="search">
            Contact  Us
        </a>
-   </header>
-    <main>
-        <section>
-            <h1>Toy for kids</h1>
-            <a href="/index.html">Home</a>
-            <b>&gt;</b>
-            <a href="/pages/catalog.html">Catalog</a>
-            <b>&gt;</b>
-            <a href="/pages/toys.html">Toys</a>
+    </header>
+    <main class="main">
+        <section class="category">
+            <h1 class="title_category">Toy for kids</h1>
+            <a class="page" href="/index.html">Home</a>
+            <img class="page__next" src="/static/icons/vectorStroke.svg" alt="">
+            <a class="page" href="/pages/catalog.html">Catalog</a>
+            <img class="page__next" src="/static/icons/vectorStroke.svg" alt="">
+            <a class="page active" href="/pages/toys.html">Toys</a>
         </section>
-        <section>
-            <h2 hidden>Filter</h2>
-            <ul>
-                <li>
-                    <p>Cost</p>
-                    <input type="range" min="0" max="500" step="50" value="250">
-                    <p>0</p>
-                    <p>500</p>
+        <section class="filter">
+            <h2 class="filter__title">Filter</h2>
+            <form action="filter__form">
+                <ul class="filter__list">
+                    <li class="filter__list_items">
+                        <div class="filter__cost">
+                            <p class="filter__name">Cost</p>
+                            <input class="filter__range" type="range" min="0" max="500" step="1" value="1">
+                            <section class="filter__cost_range">
+                                <p>0</p>
+                                <p>500</p>
+                            </section>
+                        </div>
+                    </li>
+                    <li class="filter__list_items">
+                        <section class="filter__color">
+                            <p class="filter__name">Color</p>
+                            <input class="input__color" type="checkbox" name="Color" id="color_black">
+                                <label for="color_black">Black</label>
+                            <input class="input__color" type="checkbox" name="Color" id="color_blue">
+                                <label for="color_blue">Blue</label>
+                            <input class="input__color" type="checkbox" name="Color" id="color_green">
+                                <label for="color_green">Green</label>
+                            <input class="input__color" type="checkbox" name="Color" id="color_white">
+                                <label for="color_white">White</label>
+                        </section>
+                    </li>
+                    <li class="filter__list_items">
+                        <div class="filter__delivery">
+                            <p class="filter__name">Delivery</p>
+                            <div class="input__delivery">
+                                <input class="input_radio__delivery" type="radio" name="Delivery" id="free_shipping">
+                                <label for="free_shipping">Free shipping</label>
+                            </div>
+                            <div class="input__delivery">
+                                <input class="input_radio__delivery" type="radio" name="Delivery" id="fast_shipping">
+                                <label for="fast_shipping">Fast shipping</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filter__list_items">
+                        <div class="filter__amount">
+                            <p class="filter__name">Amount</p>
+                            <div class="filter__radio_button">
+                                <input class="input__amount" type="radio" name="Amount" id="amount05">
+                                <label class="label__amount" for="amount05">0-5</label>
+                                <input class="input__amount" type="radio" name="Amount" id="amount1020">
+                                <label class="label__amount" for="amount1020">10-20</label>
+                                <input class="input__amount" type="radio" name="Amount" id="amount2050">
+                                <label class="label__amount" for="amount2050">20-50</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filter__list_items">
+                        <button class="filter__submit" type="submit">apply</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <section class="catalog">
+            <ul class="catalog__list">
+                <li class="catalog__list_items">
+                    <a href="#">
+                        <img class="catalog__items_pic" src="/static/image/product1.png" alt="SHARKY BEAN BAG CHAIR COVER">
+                    </a>
+                    <p class="catalog__items_name">SHARKY BEAN BAG CHAIR COVER</p>
+                    <p class="catalog__items_price">$60.00 USD</p>
                 </li>
-                <li>
-                    <p>Color</p>
-                    <input type="checkbox" name="Color" id="color_black">
-                        <label for="color_black">Black</label>
-                    <input type="checkbox" name="Color" id="color_blue">
-                        <label for="color_blue">Blue</label>
-                    <input type="checkbox" name="Color" id="color_green">
-                        <label for="color_green">Green</label>
-                    <input type="checkbox" name="Color" id="color_white">
-                        <label for="color_white">White</label>
+                <li class="catalog__list_items">
+                    <a href="#">
+                        <img class="catalog__items_pic" src="/static/image/product2.png" alt="BRASS DECO FRAMES">
+                    </a>
+                    <p class="catalog__items_name">BRASS DECO FRAMES</p>
+                    <p class="catalog__items_price">$66.00 USD</p>
                 </li>
-                <li>
-                    <p>Delivery</p>
-                    <input type="radio" name="Delivery" id="free_shipping">
-                        <label for="free_shipping">Free shipping</label>
-                    <input type="radio" name="Delivery" id="fast_shipping">
-                        <label for="fast_shipping">Fast shipping</label>
+                <li class="catalog__list_items">
+                    <a href="#">
+                        <img class="catalog__items_pic" src="/static/image/product3.png" alt="CIBO FULL APRON">
+                    </a>
+                    <p class="catalog__items_name">CIBO FULL APRON</p>
+                    <p class="catalog__items_price">$60.00 USD</p>
                 </li>
-                <li>
-                    <p>Amount</p>
-                    <input type="radio" name="Amount" id="amount05">
-                        <label for="amount05">0-5</label>
-                    <input type="radio" name="Amount" id="amount1020">
-                        <label for="amount1020">10-20</label>
-                    <input type="radio" name="Amount" id="amount2050">
-                        <label for="amount2050">20-50</label>
+                <li class="catalog__list_items">
+                    <a href="#">
+                        <img class="catalog__items_pic" src="/static/image/product4.png" alt="GATCHA GATCHA GUMBALL MACHINE">
+                    </a>
+                    <p class="catalog__items_name">GATCHA GATCHA GUMBALL MACHINE</p>
+                    <p class="catalog__items_price">$56.00 USD</p>
                 </li>
-                <li>
-                    <button type="submit">Apply</button>
+                <li class="catalog__list_items">
+                    <a href="#">
+                        <img class="catalog__items_pic" src="/static/image/product5.png" alt="CHRISTMAS ADVENT SCENTED CANDLE">
+                    </a>
+                    <p class="catalog__items_name">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                    <p class="catalog__items_price">$29.00 USD</p>
+                </li>
+                <li class="catalog__list_items">
+                    <a href="#">
+                        <img class="catalog__items_pic" src="/static/image/product6.png" alt="TANGLE SPINNING TEA LIGHT">
+                    </a>
+                    <p class="catalog__items_name">TANGLE SPINNING TEA LIGHT</p>
+                    <p class="catalog__items_price">$56.00 USD</p>
                 </li>
             </ul>
         </section>
-        <section>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="/static/image/product1.png" alt="SHARKY BEAN BAG CHAIR COVER">
-                    </a>
-                    <p>SHARKY BEAN BAG CHAIR COVER</p>
-                    <p>$60.00 USD</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/static/image/product2.png" alt="BRASS DECO FRAMES">
-                    </a>
-                    <p>BRASS DECO FRAMES</p>
-                    <p>$66.00 USD</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/static/image/product3.png" alt="CIBO FULL APRON">
-                    </a>
-                    <p>CIBO FULL APRON</p>
-                    <p>$60.00 USD</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/static/image/product4.png" alt="GATCHA GATCHA GUMBALL MACHINE">
-                    </a>
-                    <p>GATCHA GATCHA GUMBALL MACHINE</p>
-                    <p>$56.00 USD</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/static/image/product5.png" alt="CHRISTMAS ADVENT SCENTED CANDLE">
-                    </a>
-                    <p>CHRISTMAS ADVENT SCENTED CANDLE</p>
-                    <p>$29.00 USD</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/static/image/product6.png" alt="TANGLE SPINNING TEA LIGHT">
-                    </a>
-                    <p>TANGLE SPINNING TEA LIGHT</p>
-                    <p>$56.00 USD</p>
-                </li>
-            </ul>
-        </section>
-        <section>
+        <section class="pages">
             <a href="">
                 <img src="/static/icons/vectorLeft.svg" alt="page back">
             </a>
-            <ul>
-                <li>
+            <ul class="pages__list">
+                <li class="pages_active">
                     <a href="">1</a>
                 </li>
-                <li>
+                <li class="pages__list_items">
                     <a href="">2</a>
                 </li>
-                <li>
+                <li class="pages__list_items">
                     <a href="">3</a>
                 </li>
-                <li>
+                <li class="pages__list_items">
                     <a href="">4</a>
                 </li>
             </ul>
@@ -152,54 +175,95 @@
             </a>
         </section>
     </main>
-    <footer>
-        <section>
-            <p>Navigation</p>
-            <hr>
-            <a href="#">About Us</a>
-            <a href="/pages/blog.html">Blog</a>
-            <a href="#">Design Services</a>
-            <a href="#">Featured On</a>
-            <a href="#">2018 Holiday Catalog</a>
-            <a href="#">Shop By Designer</a>
-        </section>
-        <section>
-            <p>Customer Information</p>
-            <hr>
-            <a href="/pages/contact_us.html">Contact Us</a>
-            <a href="#">Sale Exclusions</a>
-            <a href="#">Shipping & Returns</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Search</a>
-        </section>
-        <section>
-            <p>Connect</p>
-            <label>
-                <input type="email" required placeholder="Email">
-            </label>
-            <button>Join</button>
-            <img src="/static/icons/logoFacebook.svg" alt="logo_facebook">
-            <img src="/static/icons/logoTwitter.svg" alt="logo_twitter">
-            <img src="/static/icons/logoPinterest.svg" alt="logo_pinterest">
-            <img src="/static/icons/logoInstagram.svg" alt="logo_instagram">
-        </section>
-        <hr>
-        <section>
-            <p>Company Rating</p>
-            <input type="radio" id="star-5" name="rating" value="5">
-                <label for="star-5" title="5"></label>	
-            <input type="radio" id="star-4" name="rating" value="4">
-                <label for="star-4" title="4"></label>    
-            <input type="radio" id="star-3" name="rating" value="3">
-                <label for="star-3" title="3"></label>  
-            <input type="radio" id="star-2" name="rating" value="2">
-                <label for="star-2" title="2"></label>    
-            <input type="radio" id="star-1" name="rating" value="1">
-                <label for="star-1" title="1"></label>
-        </section>
-        <p>Copyright © 2018 Dlk • Design Life Kids</p>
-        <a href="#">Web Design — Direct Line Development</a>
+    <footer class="footer">
+        <div class="footer__list">
+            <section class="footer__nav">
+                <p class="footer__title">Navigation</p>
+                <hr class="line">
+                <ul class="footer__nav_list">
+                    <li class="footer__nav_list_items">                
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="footer__nav_list_items">              
+                        <a href="./pages/blog.html">Blog</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Design Services</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Featured On</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">2018 Holiday Catalog</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Shop By Designer</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__nav">
+                <p class="footer__title">Customer Information</p>
+                <hr class="line">
+                <ul class="footer__nav_list">
+                    <li class="footer__nav_list_items">
+                        <a href="./pages/contact_us.html">Contact Us</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Sale Exclusions</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Shipping & Returns</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer__nav_list_items">
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__nav">
+                <p class="footer__title">Connect</p>
+                <hr class="line">
+                <form class="input_email">
+                    <label class>
+                        <input type="email" required placeholder="Email" class="label__email">
+                    </label>
+                    <button class="button__join" type="submit">Join</button>
+                </form>
+                <div class="footer__logo">
+                    <ul class="footer__list_logo">
+                        <li class="footer__list_items_logo"><img src="/static/icons/logoFacebook.svg" alt="logo_facebook"></li>
+                        <li class="footer__list_items_logo"><img src="/static/icons/logoTwitter.svg" alt="logo_twitter"></li>
+                        <li class="footer__list_items_logo"><img src="/static/icons/logoPinterest.svg" alt="logo_pinterest"></li>
+                        <li class="footer__list_items_logo"><img src="/static/icons/logoInstagram.svg" alt="logo_instagram"></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <hr class="line">
+        <div class="footer__info">
+            <section class="footer__rating">
+                <p class="footer__title_rating">Company Rating</p>
+                <div class="rating-area">
+                    <input type="radio" id="star-5" name="rating" value="5">
+                    <label for="star-5" title="Оценка «5»"></label>	
+                    <input type="radio" id="star-4" name="rating" value="4">
+                    <label for="star-4" title="Оценка «4»"></label>    
+                    <input type="radio" id="star-3" name="rating" value="3">
+                    <label for="star-3" title="Оценка «3»"></label>  
+                    <input type="radio" id="star-2" name="rating" value="2">
+                    <label for="star-2" title="Оценка «2»"></label>    
+                    <input type="radio" id="star-1" name="rating" value="1">
+                    <label for="star-1" title="Оценка «1»"></label>
+                </div>
+            </section>
+            <p class="footer__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+            <a class="footer__link" href="#">Web Design — Direct Line Development</a>
+        </div>
     </footer>
 </body>
 </html>

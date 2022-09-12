@@ -1,0 +1,33 @@
+body {
+    font-family: 'Open Sans';
+    src: url();
+    min-width: 1400px;
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: auto 0;
+    padding: auto 0;
+}
+
+.company__title {
+    display: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+}

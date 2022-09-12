@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style/catalog.css">
+    <link rel="stylesheet" href="/style/contact_us.css">
     <link rel="stylesheet" href="/style/normolize.css">
     <link rel="stylesheet" href="/style/common.css">
-    <title>Catalog</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <header class="header">
@@ -38,44 +38,40 @@
             Contact  Us
         </a>
     </header>
-    <main>
+    <main class="main">
         <section class="category">
-            <h1 class="title_category">Category Products</h1>
+            <h1 class="title_category">contact us</h1>
             <a class="page" href="/index.html">Home</a>
             <img class="page__next" src="/static/icons/vectorStroke.svg" alt="">
-            <a class="page active" href="/pages/catalog.html">Catalog</a>
-            <ul class="category__list">
-                <li class="category__list_items">
-                    <a class="category__name">APPAREL KIDS</a>
-                    <img class="category__img" src="/static/image/category1.jpg" alt="banner01">
-                </li>
-                <li class="category__list_items"> 
-                    <a class="category__name">HOLIDAY SHOP</a>
-                    <img class="category__img" src="/static/image/category2.jpg" alt="banner02">
-                </li>
-                <li class="category__list_items">
-                    <a href="/pages/toys.html" class="category__name">TOYS</a>
-                    <img class="category__img" src="/static/image/category3.jpg" alt="Toys">
-                </li>
-                <li class="category__list_items">
-                    <a class="category__name">ACCESSORIES</a>
-                    <img class="category__img" src="/static/image/category4.jpg" alt="banner04">
-                </li>
-                <li class="category__list_items">
-                    <a class="category__name">SALE</a>
-                    <img class="category__img" src="/static/image/category5.jpg" alt="banner05">
-                </li>
-                <li class="category__list_items">
-                    <a class="category__name">APPAREL ADULTS</a>
-                    <img class="category__img" src="/static/image/category6.jpg" alt="banner06">
-                </li>
-            </ul>
+            <a class="page active" href="/pages/blog.html">Contact Us</a>
         </section>
-        <section class="product">
-            <h2 class="product__title">Product Description</h2>
-            <p class="product__text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-            <p class="product__text">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-            <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+        <section class="contact__content">
+            <form class="contact__form">
+                <ul class="contact__list">
+                    <label for="input__name" class="input__label">Name</label>
+                    <input class="input__name" type="text" id="input__name" placeholder="Ivan Ivanov">
+                    <li class="contact__list_items">
+                        <label for="input__phone" class="input__label">Phone</label>
+                        <input type="tel" class="input__phone" id="input__phone">
+                    </li>
+                    <li class="contact__list_items">
+                        <label for="input__email" class="input__label">Email</label>
+                        <input type="text" class="input__email" id="input__email">
+                    </li>
+                    <label for="input__msg" class="input__label">Message</label>
+                        <textarea name="Message" id="input__msg" cols="30" rows="10"></textarea>
+                    <div class="checkbox__input">
+                        <input type="checkbox" class="input__check" id="input__check">
+                        <label for="input__check" class="input__label">By clicking on the button, you consent to the processing of your personal data</label>
+                    </div>
+                    <button class="button__submit" type="submit">submit</button>
+                </ul>
+            </form>
+            <div class="contact__info">
+                <p class="p__text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                <p class="p__text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                <p class="p__wait">An expert is waiting to help you!</p>
+            </div>
         </section>
     </main>
     <footer class="footer">

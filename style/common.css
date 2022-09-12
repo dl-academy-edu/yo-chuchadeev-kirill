@@ -1,0 +1,254 @@
+/* Стили для хедера */
+
+.header {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 109px;
+    margin-bottom: 40px;
+    margin-right: 110px;
+    text-transform: uppercase;
+    font-size: 14px;
+    justify-content: space;
+    width: 1178px;
+    height: 52px;
+}
+
+.header__link {
+    margin-right: 60px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__list {
+    display: inline-flex;
+    align-self: center;
+    font-weight: 400;
+    padding: 0px;
+    grid-gap: 20px;  /* расстояние между ссылками */
+}
+
+.contact__us {
+    display: flex;
+    align-self: center;
+    font-weight: 700;
+    padding: 0px;
+    margin-left: 677px;
+}
+
+.img__search {
+    margin-right: 23px;
+    align-self: center;
+}
+
+
+/* стили для футера */
+
+.footer {
+    background-color: #434343;
+    padding: 100px 110px;
+    display: block;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.footer__list {
+    display: inline-flex;
+    grid-gap: 20px;
+}
+
+.footer__nav_list {
+    display: block;
+    width: 380px;
+    margin: 28px 0px;
+    color: #FFFFFF;
+}
+
+.footer__nav_list_items {
+    margin-bottom: 15px;
+}
+
+.footer__title {
+    color: #AAAAAA;
+    margin-bottom: 23px;
+}
+
+.line {
+    border: none;
+    border-top: 1px solid #666666;
+}
+
+.input_email {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+}
+
+.label__email {
+    margin: 25px 0px;
+    padding: 0;
+    border: 0;
+    width: 380px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #666666;
+    color: #EBEBEB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-family: 'Open Sans';
+    outline: none;
+}
+
+.label__email::placeholder {
+    color: #EBEBEB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-family: 'Open Sans';
+}
+
+.label__email:focus {
+    outline: 1px solid white;
+}
+
+.button__join {
+    display: flex;
+    padding: 0;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    background-color: #000000;
+    text-transform: uppercase;
+    font-style: normal;
+    padding: 9px 22px;
+    font-weight: 700;
+    line-height: 22px;
+    border: 0;
+    cursor: pointer;
+}
+
+.button__join {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+}
+
+.footer__list_logo {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.footer__list_items_logo {
+    display: flex;
+    cursor: pointer;
+}
+
+.footer__info {
+    display: flex;
+    margin-top: 23px;
+}
+
+.footer__rating {
+    display: flex;
+}
+
+.footer__title {
+    margin: 0;
+    padding: 0;
+    padding-right: 25px;
+    padding-bottom: 23px;
+    color: #AAAAAA;
+}
+
+.footer__title_rating {
+    margin: 0;
+    padding: 0;
+    padding-right: 25px;
+    padding-bottom: 23px;
+    color: #FFFFFF;
+}
+
+
+.footer__copyright {
+    margin: 0;
+    margin-left: 155px;
+    margin-right: 109px;
+    color: #FFFFFF;
+}
+
+.footer__link {
+    color: #A2A2A2;
+}
+.footer__link:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.footer__nav_list_items:hover {
+    opacity: 0.5;
+}
+
+.footer__nav_list_items:active{
+    opacity: 0.2;
+}
+
+.footer__list_items_logo:hover {
+    opacity: 0.5;
+}
+
+.footer__list_items_logo:active {
+    opacity: 0.2;
+}
+
+
+
+/* рейтинг */
+
+.rating-area {
+	overflow: hidden;
+    margin: 0;
+    width: 97px;
+}
+
+.rating-area:not(:checked) > input {
+	display: none;
+}
+
+.rating-area:not(:checked) > label {
+	float: right;
+    margin: 0;
+	padding: 0;
+	cursor: pointer;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+
+.rating-area > input:checked ~ label {
+	color: #C29974;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: #836E5B;
+}
+
+/* .rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label, */
+.rating-area > label:hover ~ input:checked ~ label {
+	color: #C29974;
+}
+
+.rate-area > label:active {
+	position: relative;
+}

@@ -1,3 +1,9 @@
+body {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+
 /* Стили для хедера */
 
 .header {
@@ -11,6 +17,14 @@
     justify-content: space;
     width: 1178px;
     height: 52px;
+}
+
+.header a {
+    color: #1E0606;
+}
+.header a:hover {
+    color: #1E0606;
+    opacity: 0.5;
 }
 
 .header__link {
@@ -57,6 +71,10 @@
 .footer__list {
     display: inline-flex;
     grid-gap: 20px;
+}
+
+.footer__nav a {
+    color: #FFFFFF;
 }
 
 .footer__nav_list {
@@ -172,7 +190,6 @@
     padding-bottom: 23px;
     color: #FFFFFF;
 }
-
 
 .footer__copyright {
     margin: 0;

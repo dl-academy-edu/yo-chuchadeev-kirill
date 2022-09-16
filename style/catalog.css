@@ -6,6 +6,7 @@ main {
 
 .category {
     display: block;
+    margin-left: 110px;
 }
 
 .title_category {

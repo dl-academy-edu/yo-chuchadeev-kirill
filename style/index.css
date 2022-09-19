@@ -505,7 +505,7 @@ textarea {
     font-size: 18px;
 }
 
-.input__check {
+/* .input__check {
     margin: 0;
     border: 2px solid #C29974;
     border-radius: 3px;
@@ -518,6 +518,66 @@ textarea {
     line-height: center;
     column-gap: 15px;
     padding-bottom: 20px;
+} */
+
+.input__check {
+    display: none;
+    position: absolute;
+    /* margin: 0;
+    border: 2px solid #C29974;
+    border-radius: 3px;
+    width: 19px;
+    height: 19px; */
+}
+
+.checkbox__input {
+    display: flex;
+    column-gap: 15px;
+    padding-bottom: 17px;
+    position: relative;
+    height: 22px;
+}
+
+.checkbox__input .input__label {
+    padding-left: 34px;
+}
+
+.checkbox__input .input__label::before {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #C29974;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.checkbox__input .input__label::after {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: url(/static/icons/check.svg) no-repeat;
+    position: absolute;
+    top: 0.1px;
+    left: 3.6px;
+    z-index: 2;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: opacity .1s linear;
+}
+
+.input__check:checked + .input__label::after {
+    opacity: 1;
+}
+
+.checkbox__input .input__label:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .button__submit {
@@ -525,10 +585,20 @@ textarea {
     font-size: 16px;
     text-transform: uppercase;
     padding: 9px 22px;
-    background-color: #C1C1C1;
+    background-color: #000000;
     border: none;
     color: #E1E1E1;
     font-weight: 700;
+}
+
+.button__submit:hover {
+    background-color: #C29974;
+    cursor: pointer;
+}
+
+.button__submit:disabled {
+    background-color: #C1C1C1;
+    cursor: default;
 }
 
 .popap__close {

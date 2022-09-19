@@ -66,14 +66,22 @@
                     <li class="filter__list_items">
                         <section class="filter__color">
                             <p class="filter__name">Color</p>
-                            <input class="input__color" type="checkbox" name="Color" id="color_black">
-                                <label for="color_black">Black</label>
-                            <input class="input__color" type="checkbox" name="Color" id="color_blue">
-                                <label for="color_blue">Blue</label>
-                            <input class="input__color" type="checkbox" name="Color" id="color_green">
-                                <label for="color_green">Green</label>
-                            <input class="input__color" type="checkbox" name="Color" id="color_white">
-                                <label for="color_white">White</label>
+                            <div class="filter__checkbox">
+                                <input class="input__color" type="checkbox" name="Color" id="color_black">
+                                <label for="color_black" class="label__color">Black</label>
+                            </div>
+                            <div class="filter__checkbox">
+                                <input class="input__color" type="checkbox" name="Color" id="color_blue">
+                                <label for="color_blue" class="label__color">Blue</label>
+                            </div>
+                            <div class="filter__checkbox">
+                                <input class="input__color" type="checkbox" name="Color" id="color_green">
+                                <label for="color_green" class="label__color">Green</label>
+                            </div>
+                            <div class="filter__checkbox">
+                                <input class="input__color" type="checkbox" name="Color" id="color_white">
+                                <label for="color_white" class="label__color">White</label>
+                            </div>
                         </section>
                     </li>
                     <li class="filter__list_items">
@@ -81,11 +89,11 @@
                             <p class="filter__name">Delivery</p>
                             <div class="input__delivery">
                                 <input class="input_radio__delivery" type="radio" name="Delivery" id="free_shipping">
-                                <label for="free_shipping">Free shipping</label>
+                                <label for="free_shipping" class="label_radio__delivery">Free shipping</label>
                             </div>
                             <div class="input__delivery">
                                 <input class="input_radio__delivery" type="radio" name="Delivery" id="fast_shipping">
-                                <label for="fast_shipping">Fast shipping</label>
+                                <label for="fast_shipping" class="label_radio__delivery">Fast shipping</label>
                             </div>
                         </div>
                     </li>
@@ -111,43 +119,49 @@
         <section class="catalog">
             <ul class="catalog__list">
                 <li class="catalog__list_items">
-                    <a href="#">
+                    <a href="#" class="catalog__pic">
                         <img class="catalog__items_pic" src="/static/image/product1.png" alt="SHARKY BEAN BAG CHAIR COVER">
+                        <p class="learn_more">learn more</p>
                     </a>
                     <p class="catalog__items_name">SHARKY BEAN BAG CHAIR COVER</p>
                     <p class="catalog__items_price">$60.00 USD</p>
                 </li>
                 <li class="catalog__list_items">
-                    <a href="#">
+                    <a href="#" class="catalog__pic">
                         <img class="catalog__items_pic" src="/static/image/product2.png" alt="BRASS DECO FRAMES">
+                        <p class="learn_more">learn more</p>
                     </a>
                     <p class="catalog__items_name">BRASS DECO FRAMES</p>
                     <p class="catalog__items_price">$66.00 USD</p>
                 </li>
                 <li class="catalog__list_items">
-                    <a href="#">
+                    <a href="#" class="catalog__pic">
                         <img class="catalog__items_pic" src="/static/image/product3.png" alt="CIBO FULL APRON">
+                        <p class="learn_more">learn more</p>
                     </a>
                     <p class="catalog__items_name">CIBO FULL APRON</p>
                     <p class="catalog__items_price">$60.00 USD</p>
                 </li>
                 <li class="catalog__list_items">
-                    <a href="#">
+                    <a href="#" class="catalog__pic">
                         <img class="catalog__items_pic" src="/static/image/product4.png" alt="GATCHA GATCHA GUMBALL MACHINE">
+                        <p class="learn_more">learn more</p>
                     </a>
                     <p class="catalog__items_name">GATCHA GATCHA GUMBALL MACHINE</p>
                     <p class="catalog__items_price">$56.00 USD</p>
                 </li>
                 <li class="catalog__list_items">
-                    <a href="#">
+                    <a href="#" class="catalog__pic">
                         <img class="catalog__items_pic" src="/static/image/product5.png" alt="CHRISTMAS ADVENT SCENTED CANDLE">
+                        <p class="learn_more">learn more</p>
                     </a>
                     <p class="catalog__items_name">CHRISTMAS ADVENT SCENTED CANDLE</p>
                     <p class="catalog__items_price">$29.00 USD</p>
                 </li>
                 <li class="catalog__list_items">
-                    <a href="#">
+                    <a href="#" class="catalog__pic">
                         <img class="catalog__items_pic" src="/static/image/product6.png" alt="TANGLE SPINNING TEA LIGHT">
+                        <p class="learn_more">learn more</p>
                     </a>
                     <p class="catalog__items_name">TANGLE SPINNING TEA LIGHT</p>
                     <p class="catalog__items_price">$56.00 USD</p>
@@ -177,7 +191,7 @@
             </a>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer ">
         <div class="center">
             <div class="footer__list">
                 <section class="footer__nav">

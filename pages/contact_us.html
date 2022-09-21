@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style/contact_us.css">
-    <link rel="stylesheet" href="/style/normolize.css">
-    <link rel="stylesheet" href="/style/common.css">
+    <link rel="stylesheet" href="/style.min/contact_us.min.css">
+    <link rel="stylesheet" href="/style.min/normolize.min.css">
+    <link rel="stylesheet" href="/style.min/common.min.css">
     <title>Contact Us</title>
 </head>
 <body>
@@ -48,18 +48,21 @@
             <a class="page active" href="/pages/blog.html">Contact Us</a>
         </section>
         <section class="contact__content">
+            <h5>Contact Us</h5>
             <form class="contact__form">
-                <ul class="contact__list">
+                <div class="contact__list">
                     <label for="input__name" class="input__label">Name</label>
                     <input class="input__name" type="text" id="input__name" placeholder="Ivan Ivanov">
-                    <li class="contact__list_items">
-                        <label for="input__phone" class="input__label">Phone</label>
-                        <input type="tel" class="input__phone" id="input__phone">
-                    </li>
-                    <li class="contact__list_items">
-                        <label for="input__email" class="input__label">Email</label>
-                        <input type="text" class="input__email" id="input__email">
-                    </li>
+                    <ul>
+                        <li class="contact__list_items">
+                            <label for="input__phone" class="input__label">Phone</label>
+                            <input type="tel" class="input__phone" id="input__phone">
+                        </li>
+                        <li class="contact__list_items">
+                            <label for="input__email" class="input__label">Email</label>
+                            <input type="text" class="input__email" id="input__email">
+                        </li>
+                    </ul>
                     <label for="input__msg" class="input__label">Message</label>
                         <textarea name="Message" id="input__msg" cols="30" rows="10"></textarea>
                     <div class="checkbox__input">
@@ -67,7 +70,7 @@
                         <label for="input__check" class="input__label">By clicking on the button, you consent to the processing of your personal data</label>
                     </div>
                     <button class="button__submit" type="submit">submit</button>
-                </ul>
+                </div>
             </form>
             <div class="contact__info">
                 <p class="p__text">Our support team are on-hand to assist with any issues you are experiencing.</p>
@@ -76,10 +79,11 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer ">
         <div class="center">
             <div class="footer__list">
                 <section class="footer__nav">
+                    <h5>Navigation</h5>
                     <p class="footer__title">Navigation</p>
                     <hr class="line">
                     <ul class="footer__nav_list">
@@ -104,6 +108,7 @@
                     </ul>
                 </section>
                 <section class="footer__nav">
+                    <h5>Customer Information</h5>
                     <p class="footer__title">Customer Information</p>
                     <hr class="line">
                     <ul class="footer__nav_list">
@@ -128,6 +133,7 @@
                     </ul>
                 </section>
                 <section class="footer__nav">
+                    <h5>Connect</h5>
                     <p class="footer__title">Connect</p>
                     <hr class="line">
                     <form class="input_email">
@@ -149,6 +155,7 @@
             <hr class="line_2 center">
             <div class="footer__info center">
                 <section class="footer__rating">
+                    <h5>Company Rating</h5>
                     <p class="footer__title_rating">Company Rating</p>
                     <div class="rating-area">
                         <input type="radio" id="star-5" name="rating" value="5">

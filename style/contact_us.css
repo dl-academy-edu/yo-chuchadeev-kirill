@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* стили для контакт ас */
 
 .category {
@@ -30,17 +37,22 @@
 }
 
 .contact__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 50px 110px 60px 110px;
 
 }
 
 .contact__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .contact__list {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 680px;
     height: 542px;
     background-color: #E5EAF8;
@@ -54,7 +66,10 @@
 }
 
 .input__name {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 50px;
@@ -67,12 +82,16 @@
 
 .contact__list_items {
     display: inline-block;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .input__phone{
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 50px;
     width: 290px;
@@ -86,7 +105,10 @@
 
 .input__email {
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 290px;
     height: 50px;
@@ -98,7 +120,8 @@
 }
 
 textarea {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     resize: none;
     width: 100%;
     height: 140px;
@@ -118,8 +141,12 @@ textarea {
 }
 
 .checkbox__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    column-gap: 15px;
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
     padding-bottom: 17px;
     position: relative;
     height: 22px;
@@ -140,7 +167,8 @@ textarea {
     top: 0;
     left: 0;
     z-index: 1;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .checkbox__input .input__label::after {
@@ -154,7 +182,10 @@ textarea {
     left: 3.6px;
     z-index: 2;
     opacity: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: opacity .1s linear;
+    -o-transition: opacity .1s linear;
     transition: opacity .1s linear;
 }
 
@@ -189,7 +220,8 @@ textarea {
 
 
 .button__submit {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 16px;
     text-transform: uppercase;
     padding: 9px 22px;

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .center {
     width: 1400px;
     margin: 0 auto;
@@ -6,6 +13,8 @@
 /* Стили для хедера */
 
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 50px;
     margin-left: 109px;
@@ -13,7 +22,6 @@
     margin-right: 110px;
     text-transform: uppercase;
     font-size: 14px;
-    justify-content: space;
     width: 1178px;
     height: 52px;
 }
@@ -21,9 +29,13 @@
 .header a {
     color: #1E0606;
 }
+
 .header a:hover {
-    color: #1E0606;
     opacity: 0.5;
+}
+
+.header a:focus {
+    opacity: 0.3;
 }
 
 .header__link {
@@ -31,28 +43,39 @@
 }
 
 .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .nav__list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    align-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
     font-weight: 400;
     padding: 0px;
     grid-gap: 20px;  /* расстояние между ссылками */
 }
 
 .contact__us {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     font-weight: 700;
     padding: 0px;
-    margin-left: 677px;
+    margin-left: 678px;
 }
 
 .img__search {
     margin-right: 23px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 
@@ -63,12 +86,15 @@
     padding: 100px 110px;
     display: block;
     font-size: 16px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-top: 50px;
 }
 
 .footer__list {
     margin-left: 110px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     grid-gap: 20px;
     width: 1180px;
@@ -110,7 +136,10 @@
 }
 
 .input_email {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
 }
@@ -132,6 +161,42 @@
     outline: none;
 }
 
+.label__email::-webkit-input-placeholder {
+    color: #EBEBEB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-family: 'Open Sans';
+}
+
+.label__email::-moz-placeholder {
+    color: #EBEBEB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-family: 'Open Sans';
+}
+
+.label__email:-ms-input-placeholder {
+    color: #EBEBEB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-family: 'Open Sans';
+}
+
+.label__email::-ms-input-placeholder {
+    color: #EBEBEB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-family: 'Open Sans';
+}
+
 .label__email::placeholder {
     color: #EBEBEB;
     font-weight: 400;
@@ -146,6 +211,8 @@
 }
 
 .button__join {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0;
     color: #FFFFFF;
@@ -161,6 +228,8 @@
 }
 
 .button__join {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     top: 25px;
@@ -168,22 +237,30 @@
 }
 
 .footer__list_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     grid-gap: 10px;
 }
 
 .footer__list_items_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
 }
 
 .footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 23px;
     margin-left: 110px;
 }
 
 .footer__rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 

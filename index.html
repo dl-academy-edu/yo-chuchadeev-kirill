@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style/index.css">
-    <link rel="stylesheet" href="/style/normolize.css">
-    <link rel="stylesheet" href="/style/common.css">
+    <link rel="stylesheet" href="/style.min/index.min.css">
+    <link rel="stylesheet" href="/style.min/normolize.min.css">
+    <link rel="stylesheet" href="/style.min/common.min.css">
     <title class="title">DLK • Design Life Kids</title>
 </head>
 <body>
@@ -42,6 +42,7 @@
     </header>
     <main class="main center">
         <section class="banner">
+            <h5>Main banner</h5>
             <ul class="banner__list">
                 <li class="banner__list_items">
                     <p class="banner__page">01</p>
@@ -55,7 +56,9 @@
                     <p class="banner__text">Designed in Slovenia</p>
                     <button class="button_explore banner_js">EXPLORE NOW</button>
                 </li>
-                <img class="banner__img" src="./static/image/mainBanner.png" alt="banner">
+                <li>
+                    <img class="banner__img" src="./static/image/mainBanner.png" alt="banner">
+                </li>
             </ul>
             <p class="banner__ship">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </section>
@@ -86,13 +89,18 @@
                 <li class="category__swapper_right">
                     <button class="button__swapper"><img src="./static/icons/buttonRight.svg" alt="Button right"></button>
                 </li>
-                <p class="swapper_text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+                <li>
+                    <p class="swapper_text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+                </li>
             </ul>
         </section>
         <section class="delivery">
+            <h5>Delivery</h5>
             <img class="delivery__banner" src="./static/image/banner2.jpg" alt="banner2">
             <ul class="delivery__list">
-                <h2 class="delivery__title">Delivery</h2>
+                <li>
+                    <h2 class="delivery__title">Delivery</h2>
+                </li>
                 <li class="delivery__list_items delivery__active">
                     <p>Delivery</p>
                 </li>
@@ -102,9 +110,13 @@
                 <li class="delivery__list_items">
                     <p>Credit</p>
                 </li>
-                <p class="delivery_text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical. <br> <br>
-                What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-                <a class="learn_more" href="#">LEARN MORE</a>
+                <li>
+                    <p class="delivery_text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical. <br> <br>
+                    What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                </li>
+                <li>
+                    <a class="learn_more" href="#">LEARN MORE</a>
+                </li>
             </ul>
         </section>
         <section class="company">
@@ -117,6 +129,7 @@
             </ul>
         </section>
         <section>
+            <h5>About Us</h5>
             <ul class="about_us">
                 <li class="design_life_kids">
                     <p class="design__title">Design Life Kids</p>
@@ -134,10 +147,11 @@
             </ul>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer ">
         <div class="center">
             <div class="footer__list">
                 <section class="footer__nav">
+                    <h5>Navigation</h5>
                     <p class="footer__title">Navigation</p>
                     <hr class="line">
                     <ul class="footer__nav_list">
@@ -162,6 +176,7 @@
                     </ul>
                 </section>
                 <section class="footer__nav">
+                    <h5>Customer Information</h5>
                     <p class="footer__title">Customer Information</p>
                     <hr class="line">
                     <ul class="footer__nav_list">
@@ -186,6 +201,7 @@
                     </ul>
                 </section>
                 <section class="footer__nav">
+                    <h5>Connect</h5>
                     <p class="footer__title">Connect</p>
                     <hr class="line">
                     <form class="input_email">
@@ -207,6 +223,7 @@
             <hr class="line_2 center">
             <div class="footer__info center">
                 <section class="footer__rating">
+                    <h5>Company Rating</h5>
                     <p class="footer__title_rating">Company Rating</p>
                     <div class="rating-area">
                         <input type="radio" id="star-5" name="rating" value="5">
@@ -229,8 +246,10 @@
     <div class="popup">
         <form class="popup__form">
             <ul class="popup__list">
-                <label for="input__name" class="input__label">Name</label>
-                <input class="input__name" type="text" id="input__name" placeholder="Ivan Ivanov">
+                <li>
+                    <label for="input__name" class="input__label">Name</label>
+                    <input class="input__name" type="text" id="input__name" placeholder="Ivan Ivanov">
+                </li>
                 <li class="popup__list_items">
                     <label for="input__phone" class="input__label">Phone</label>
                     <input type="tel" class="input__phone" id="input__phone">
@@ -239,13 +258,15 @@
                     <label for="input__email" class="input__label">Email</label>
                     <input type="text" class="input__email" id="input__email">
                 </li>
-                <label for="input__msg" class="input__label">Message</label>
-                    <textarea name="Message" id="input__msg" cols="30" rows="10"></textarea>
-                <div class="checkbox__input">
-                    <input type="checkbox" class="input__check" id="input__check">
-                    <label for="input__check" class="input__label">By clicking on the button, you consent to the processing of your personal data</label>
-                </div>
-                <button class="button__submit" type="submit">submit</button>
+                <li>
+                    <label for="input__msg" class="input__label">Message</label>
+                        <textarea name="Message" id="input__msg" cols="30" rows="10"></textarea>
+                    <div class="checkbox__input">
+                        <input type="checkbox" class="input__check" id="input__check">
+                        <label for="input__check" class="input__label">By clicking on the button, you consent to the processing of your personal data</label>
+                    </div>
+                    <button class="button__submit" type="submit">submit</button>
+                </li>
             </ul>
             <img src="/static/icons/close.svg" alt="" class="popap__close">
         </form>

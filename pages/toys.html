@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style/common.css">
-    <link rel="stylesheet" href="/style/normolize.css">
-    <link rel="stylesheet" href="/style/toys.css">
+    <link rel="stylesheet" href="/style.min/toys.min.css">
+    <link rel="stylesheet" href="/style.min/normolize.min.css">
+    <link rel="stylesheet" href="/style.min/common.min.css">
     <title>Toys</title>
 </head>
 <body>
@@ -57,14 +57,15 @@
                         <div class="filter__cost">
                             <p class="filter__name">Cost</p>
                             <input class="filter__range" type="range" min="0" max="500" step="1" value="1">
-                            <section class="filter__cost_range">
+                            <div class="filter__cost_range">
                                 <p>0</p>
                                 <p>500</p>
-                            </section>
+                            </div>
                         </div>
                     </li>
                     <li class="filter__list_items">
                         <section class="filter__color">
+                            <h5>Color</h5>
                             <p class="filter__name">Color</p>
                             <div class="filter__checkbox">
                                 <input class="input__color" type="checkbox" name="Color" id="color_black">
@@ -117,6 +118,7 @@
             </form>
         </section>
         <section class="catalog">
+            <h5>Catalog</h5>
             <ul class="catalog__list">
                 <li class="catalog__list_items">
                     <a href="#" class="catalog__pic">
@@ -169,6 +171,7 @@
             </ul>
         </section>
         <section class="pages">
+            <h5>Catalog pages</h5>
             <a href="">
                 <img src="/static/icons/vectorLeft.svg" alt="page back">
             </a>
@@ -195,6 +198,7 @@
         <div class="center">
             <div class="footer__list">
                 <section class="footer__nav">
+                    <h5>Navigation</h5>
                     <p class="footer__title">Navigation</p>
                     <hr class="line">
                     <ul class="footer__nav_list">
@@ -219,6 +223,7 @@
                     </ul>
                 </section>
                 <section class="footer__nav">
+                    <h5>Customer Information</h5>
                     <p class="footer__title">Customer Information</p>
                     <hr class="line">
                     <ul class="footer__nav_list">
@@ -243,6 +248,7 @@
                     </ul>
                 </section>
                 <section class="footer__nav">
+                    <h5>Connect</h5>
                     <p class="footer__title">Connect</p>
                     <hr class="line">
                     <form class="input_email">
@@ -264,6 +270,7 @@
             <hr class="line_2 center">
             <div class="footer__info center">
                 <section class="footer__rating">
+                    <h5>Company Rating</h5>
                     <p class="footer__title_rating">Company Rating</p>
                     <div class="rating-area">
                         <input type="radio" id="star-5" name="rating" value="5">

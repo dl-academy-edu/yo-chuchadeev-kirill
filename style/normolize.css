@@ -1,6 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
     font-family: 'Open Sans';
-    src: url();
     min-width: 1400px;
     margin: auto;
 }
@@ -14,8 +20,8 @@ a {
 }
 
 p {
-    margin: auto 0;
-    padding: auto 0;
+    margin: 0;
+    padding: 0;
 }
 
 .company__title {
@@ -30,4 +36,28 @@ ul {
 hr {
     margin: 0;
     padding: 0;
+}
+
+input, textarea {
+    outline: none;
+}
+
+input[type="text"]:hover, textarea:hover {
+    border: 1px solid #C29974;
+}
+
+input[type="text"]:focus , textarea:focus {
+    border: 1px solid #C29974;
+}
+
+input[type="tel"]:hover, textarea:hover {
+    border: 1px solid #C29974;
+}
+
+input[type="tel"]:focus , textarea:focus {
+    border: 1px solid #C29974;
+}
+
+h5 {
+    display: none;
 }

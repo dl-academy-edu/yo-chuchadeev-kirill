@@ -57,6 +57,7 @@ main {
     position: relative;
     width: 280px;
     height: 270px;
+    background-color: #C7C1C1;
 }
 
 .category__list_items:nth-child(n+4):nth-child(-n+4) {

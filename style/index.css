@@ -187,6 +187,7 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     position: relative;
+    background-color: #C7C1C1;
 }
 
 .category__name {
@@ -325,7 +326,17 @@
     padding-bottom: 11px;
 }
 
-.delivery_text {
+.delivery_text_1 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+    margin-top: 19px;
+    margin-left: 61px;
+    font-weight: 400;
+}
+
+.delivery_text_2 {
     margin: 0;
     font-size: 16px;
     line-height: 22px;
@@ -371,7 +382,6 @@
     vertical-align: middle;
 }
 
-
 .about_us {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -383,11 +393,10 @@
 }
 
 .design_life_kids{
-    padding-left: 30px;
     position: relative;
 }
 
-.design_life_kids::after {
+/* .design_life_kids::after {
     content: '';
     display: block;
     width: 543px;
@@ -397,13 +406,21 @@
     z-index: -1;
     top: 26px;
     left: 0px;
-}
+} */
 
 .design__title {
+    position: absolute;
+    padding-left: 30px;
     text-transform: uppercase;
     font-size: 38px;
     font-family: 'Montserrat';
     font-weight: 700;
+}
+
+.design__backgrond {
+    margin-top: 26px;
+    background: #E1F0F7;
+    padding: 31px 30px 27px 30px;
 }
 
 .design__subtitle {

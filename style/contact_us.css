@@ -1,9 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* стили для контакт ас */
 
 .category {
     display: block;
     margin: 0px 110px;
 }
+
 
 .title_category {
     text-transform: uppercase;
@@ -17,6 +25,7 @@
     font-family: 'Crimson Text';
     font-size: 20px;
     font-style: italic;
+    color: #1E0606;
 }
 
 .active {
@@ -27,26 +36,23 @@
     margin: 0px 20px;
 }
 
-
-
-
-
-
-
-
-
 .contact__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 50px 110px 60px 110px;
 
 }
 
 .contact__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .contact__list {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 680px;
     height: 542px;
     background-color: #E5EAF8;
@@ -60,7 +66,10 @@
 }
 
 .input__name {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 50px;
@@ -73,12 +82,16 @@
 
 .contact__list_items {
     display: inline-block;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .input__phone{
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 50px;
     width: 290px;
@@ -92,7 +105,10 @@
 
 .input__email {
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 290px;
     height: 50px;
@@ -104,32 +120,108 @@
 }
 
 textarea {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     resize: none;
     width: 100%;
     height: 140px;
     margin-top: 6px;
     margin-bottom: 20px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    #C1C1C1}
+}
 
 .input__check {
-    margin: 0;
+    display: none;
+    position: absolute;
+    /* margin: 0;
     border: 2px solid #C29974;
     border-radius: 3px;
     width: 19px;
-    height: 19px;
+    height: 19px; */
 }
 
 .checkbox__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    line-height: center;
-    column-gap: 15px;
-    padding-bottom: 20px;
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+    padding-bottom: 17px;
+    position: relative;
+    height: 22px;
 }
 
+.checkbox__input .input__label {
+    padding-left: 34px;
+}
+
+.checkbox__input .input__label::before {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #C29974;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.checkbox__input .input__label::after {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: url(/static/icons/check.svg) no-repeat;
+    position: absolute;
+    top: 0.1px;
+    left: 3.6px;
+    z-index: 2;
+    opacity: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: opacity .1s linear;
+    -o-transition: opacity .1s linear;
+    transition: opacity .1s linear;
+}
+
+.input__check:checked + .input__label::after {
+    opacity: 1;
+}
+
+.checkbox__input .input__label:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* input[type="checkbox"] {
+    display: none;
+    position: absolute;
+} */
+
+/* .checkbox__input .input__label::before {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #C29974;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-right: 15px;
+} */
+
+/* input[type="checkbox"]:checked + label::before {
+    background-image: url(/static/icons/check.svg);
+} */
+
+
 .button__submit {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 16px;
     text-transform: uppercase;
     padding: 9px 22px;
@@ -141,6 +233,12 @@ textarea {
 
 .button__submit:hover {
     background-color: #C29974;
+    cursor: pointer;
+}
+
+.button__submit:disabled {
+    background-color: #C1C1C1;
+    cursor: default;
 }
 
 .contact__info {

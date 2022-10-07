@@ -10,36 +10,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style/index.css">
-    <link rel="stylesheet" href="/style/normolize.css">
-    <link rel="stylesheet" href="/style/common.css">
+    <link rel="stylesheet" href="/style.min/index.min.css">
+    <link rel="stylesheet" href="/style.min/normolize.min.css">
+    <link rel="stylesheet" href="/style.min/common.min.css">
     <title class="title">DLK • Design Life Kids</title>
 </head>
 <body>
-    <header class="header">
-        <a class="header__link" href="./index.html">
-            <img class="logo_dlk" src="./static/icons/logoDlk.svg" alt="DLK">
-        </a>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__list_items">
-                    <a class="nav__list_link" href="./pages/blog.html">Blog</a>
-                </li>
-                <li class="nav__list_items">
-                    <a class="nav__list_link" href="./pages/catalog.html">Catalog</a>
-                </li>
-                <li class="nav__list_items">
-                    <a class="nav__list_link" href="#">About Us</a>
-                </li>
-            </ul>
-        </nav>
-        <a class="contact__us" href="./pages/contact_us.html">
-            <img class="img__search" src="./static/icons/buttonSearch.svg" alt="search">
-            Contact  Us
-        </a>
+    <header class="center">
+        <div class="header">
+            <a class="header__link" href="/index.html">
+                <img class="logo_dlk" src="/static/icons/logoDlk.svg" alt="DLK" width="100" height="52">
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list_items">
+                        <a class="nav__list_link" href="/pages/blog.html">Blog</a>
+                    </li>
+                    <li class="nav__list_items">
+                        <a class="nav__list_link" href="/pages/catalog.html">Catalog</a>
+                    </li>
+                    <li class="nav__list_items">
+                        <a class="nav__list_link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="contact__us" href="/pages/contact_us.html">
+                <img class="img__search" src="/static/icons/buttonSearch.svg" alt="search" width="17" height="17">
+                Contact  Us
+            </a>
+        </div>
     </header>
-    <main class="main">
+    <main class="main center">
         <section class="banner">
+            <h5>Main banner</h5>
             <ul class="banner__list">
                 <li class="banner__list_items">
                     <p class="banner__page">01</p>
@@ -53,7 +56,9 @@
                     <p class="banner__text">Designed in Slovenia</p>
                     <button class="button_explore banner_js">EXPLORE NOW</button>
                 </li>
-                <img class="banner__img" src="./static/image/mainBanner.png" alt="banner">
+                <li>
+                    <img class="banner__img" src="./static/image/mainBanner.png" alt="banner" width="635" height="461">
+                </li>
             </ul>
             <p class="banner__ship">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </section>
@@ -62,35 +67,44 @@
             <ul class="category__list">
                 <li class="category__list_items">
                     <a class="category__name" href="">Apparel kids</a>
-                    <img class="category__img" src="./static/image/category1.jpg" alt="Apparel kids">
+                    <img class="category__img" src="./static/image/category1.jpg" alt="Apparel kids" width="280" height="270">
                 </li>
                 <li class="category__list_items">
                     <a class="category__name" href="">Holiday shop</a>
-                    <img class="category__img" src="./static/image/category2.jpg" alt="Holiday shop">
+                    <img class="category__img" src="./static/image/category2.jpg" alt="Holiday shop" width="280" height="270">
                 </li>
                 <li class="category__list_items">
                     <a class="category__name" href="/pages/toys.html">Toys</a>
-                    <img class="category__img" src="/static/image/category3.jpg" alt="Toys">
+                    <img class="category__img" src="/static/image/category3.jpg" alt="Toys" width="280" height="270">
                 </li>
                 <li class="category__list_items">
                     <a class="category__name" href="">Accessories</a>
-                    <img class="category__img" src="./static/image/category4.jpg" alt="Accessories">
+                    <img class="category__img" src="./static/image/category4.jpg" alt="Accessories" width="280" height="270">
                 </li>
             </ul>
             <ul class="category__swapper">
                 <li class="category__swapper_left">
-                    <button class="button__swapper"><img src="./static/icons/buttonLeft.svg" alt="Button left"></button>
+                    <button class="button__swapper">
+                        <img src="./static/icons/buttonLeft.svg" alt="Button left" width="18" height="30">
+                    </button>
                 </li>
                 <li class="category__swapper_right">
-                    <button class="button__swapper"><img src="./static/icons/buttonRight.svg" alt="Button right"></button>
+                    <button class="button__swapper">
+                        <img src="./static/icons/buttonRight.svg" alt="Button right" width="18" height="30">
+                    </button>
                 </li>
-                <p class="swapper_text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+                <li>
+                    <p class="swapper_text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+                </li>
             </ul>
         </section>
         <section class="delivery">
-            <img class="delivery__banner" src="./static/image/banner2.jpg" alt="banner2">
+            <h5>Delivery</h5>
+            <img class="delivery__banner" src="./static/image/banner2.jpg" alt="banner2" width="480" height="559">
             <ul class="delivery__list">
-                <h2 class="delivery__title">Delivery</h2>
+                <li>
+                    <h2 class="delivery__title">Delivery</h2>
+                </li>
                 <li class="delivery__list_items delivery__active">
                     <p>Delivery</p>
                 </li>
@@ -100,27 +114,36 @@
                 <li class="delivery__list_items">
                     <p>Credit</p>
                 </li>
-                <p class="delivery_text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical. <br> <br>
-                What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-                <a class="learn_more" href="#">LEARN MORE</a>
+                <li>
+                    <p class="delivery_text_1">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    <p class="delivery_text_2">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                </li>
+                <li>
+                    <a class="learn_more" href="#">LEARN MORE</a>
+                </li>
             </ul>
         </section>
         <section class="company">
             <h2 class="company__title">Company</h2>
             <ul class="company__list">
-                <li><img src="./static/icons/logoMailru.svg" alt="logo_mailru"></li>
-                <li><img src="./static/icons/logoApple.svg" alt="logo_apple"></li>
-                <li><img src="./static/icons/logoEltex.svg" alt="logo_eltex"></li>
-                <li><img src="./static/icons/logoOwox.svg" alt="logo_owox"></li>
+                <li><img src="./static/icons/logoMailru.svg" alt="logo_mailru" width="193" height="60"></li>
+                <li><img src="./static/icons/logoApple.svg" alt="logo_apple" width="179" height="61"></li>
+                <li><img src="./static/icons/logoEltex.svg" alt="logo_eltex" width="216" height="46"></li>
+                <li><img src="./static/icons/logoOwox.svg" alt="logo_owox" width="211" height="40"></li>
             </ul>
         </section>
         <section>
+            <h5>About Us</h5>
             <ul class="about_us">
                 <li class="design_life_kids">
                     <p class="design__title">Design Life Kids</p>
-                    <p class="design__subtitle">About Us</p>
-                    <p class="design__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                    <a class="button_buy" href="#">BUY NOW</a>
+                    <div class="design__backgrond">
+                        <p class="design__subtitle">About Us</p>
+                        <p class="design__text">
+                            Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.                            
+                        </p>
+                        <a class="button_buy" href="#">BUY NOW</a>
+                    </div>
                 </li>
                 <li class="contacts">
                     <p class="contacts__title">Contacts</p>
@@ -132,101 +155,109 @@
             </ul>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer__list">
-            <section class="footer__nav">
-                <p class="footer__title">Navigation</p>
-                <hr class="line">
-                <ul class="footer__nav_list">
-                    <li class="footer__nav_list_items">                
-                        <a href="#">About Us</a>
-                    </li>
-                    <li class="footer__nav_list_items">              
-                        <a href="./pages/blog.html">Blog</a>
-                    </li>
-                    <li class="footer__nav_list_items">
-                        <a href="#">Design Services</a>
-                    </li>
-                    <li class="footer__nav_list_items">
-                        <a href="#">Featured On</a>
-                    </li>
-                    <li class="footer__nav_list_items">
-                        <a href="#">2018 Holiday Catalog</a>
-                    </li>
-                    <li class="footer__nav_list_items">
-                        <a href="#">Shop By Designer</a>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer__nav">
-                <p class="footer__title">Customer Information</p>
-                <hr class="line">
-                <ul class="footer__nav_list">
-                    <li class="footer__nav_list_items">
-                        <a href="./pages/contact_us.html">Contact Us</a>
-                    </li>
-                    <li class="footer__nav_list_items">
-                        <a href="#">Sale Exclusions</a>
-                    </li>
-                    <li class="footer__nav_list_items">
-                        <a href="#">Shipping & Returns</a>
-                    </li>
-                    <li class="footer__nav_list_items">
-                        <a href="#">Terms & Conditions</a>
-                    </li>
-                    <li class="footer__nav_list_items">
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li class="footer__nav_list_items">
-                        <a href="#">Search</a>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer__nav">
-                <p class="footer__title">Connect</p>
-                <hr class="line">
-                <form class="input_email">
-                    <label class>
-                        <input type="email" required placeholder="Email" class="label__email">
-                    </label>
-                    <button class="button__join" type="submit">Join</button>
-                </form>
-                <div class="footer__logo">
-                    <ul class="footer__list_logo">
-                        <li class="footer__list_items_logo"><img src="/static/icons/logoFacebook.svg" alt="logo_facebook"></li>
-                        <li class="footer__list_items_logo"><img src="/static/icons/logoTwitter.svg" alt="logo_twitter"></li>
-                        <li class="footer__list_items_logo"><img src="/static/icons/logoPinterest.svg" alt="logo_pinterest"></li>
-                        <li class="footer__list_items_logo"><img src="/static/icons/logoInstagram.svg" alt="logo_instagram"></li>
+    <footer class="footer ">
+        <div class="center">
+            <div class="footer__list">
+                <section class="footer__nav">
+                    <h5>Navigation</h5>
+                    <p class="footer__title">Navigation</p>
+                    <hr class="line">
+                    <ul class="footer__nav_list">
+                        <li class="footer__nav_list_items">                
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="footer__nav_list_items">              
+                            <a href="/pages/blog.html">Blog</a>
+                        </li>
+                        <li class="footer__nav_list_items">
+                            <a href="#">Design Services</a>
+                        </li>
+                        <li class="footer__nav_list_items">
+                            <a href="#">Featured On</a>
+                        </li>
+                        <li class="footer__nav_list_items">
+                            <a href="#">2018 Holiday Catalog</a>
+                        </li>
+                        <li class="footer__nav_list_items">
+                            <a href="#">Shop By Designer</a>
+                        </li>
                     </ul>
-                </div>
-            </section>
-        </div>
-        <hr class="line">
-        <div class="footer__info">
-            <section class="footer__rating">
-                <p class="footer__title_rating">Company Rating</p>
-                <div class="rating-area">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5" title="Оценка «5»"></label>	
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4" title="Оценка «4»"></label>    
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3" title="Оценка «3»"></label>  
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2" title="Оценка «2»"></label>    
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1" title="Оценка «1»"></label>
-                </div>
-            </section>
-            <p class="footer__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-            <a class="footer__link" href="#">Web Design — Direct Line Development</a>
+                </section>
+                <section class="footer__nav">
+                    <h5>Customer Information</h5>
+                    <p class="footer__title">Customer Information</p>
+                    <hr class="line">
+                    <ul class="footer__nav_list">
+                        <li class="footer__nav_list_items">
+                            <a href="/pages/contact_us.html">Contact Us</a>
+                        </li>
+                        <li class="footer__nav_list_items">
+                            <a href="#">Sale Exclusions</a>
+                        </li>
+                        <li class="footer__nav_list_items">
+                            <a href="#">Shipping & Returns</a>
+                        </li>
+                        <li class="footer__nav_list_items">
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="footer__nav_list_items">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer__nav_list_items">
+                            <a href="#">Search</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="footer__nav">
+                    <h5>Connect</h5>
+                    <p class="footer__title">Connect</p>
+                    <hr class="line">
+                    <form class="input_email">
+                        <label>
+                            <input type="email" required placeholder="Email" class="label__email">
+                        </label>
+                        <button class="button__join" type="submit">Join</button>
+                    </form>
+                    <div class="footer__logo">
+                        <ul class="footer__list_logo">
+                            <li class="footer__list_items_logo"><img src="/static/icons/logoFacebook.svg" alt="logo_facebook" width="30" height="30"></li>
+                            <li class="footer__list_items_logo"><img src="/static/icons/logoTwitter.svg" alt="logo_twitter" width="30" height="30"></li>
+                            <li class="footer__list_items_logo"><img src="/static/icons/logoPinterest.svg" alt="logo_pinterest" width="30" height="30"></li>
+                            <li class="footer__list_items_logo"><img src="/static/icons/logoInstagram.svg" alt="logo_instagram" width="30" height="30"></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <hr class="line_2 center">
+            <div class="footer__info center">
+                <section class="footer__rating">
+                    <h5>Company Rating</h5>
+                    <p class="footer__title_rating">Company Rating</p>
+                    <div class="rating-area">
+                        <input type="radio" id="star-5" name="rating" value="5">
+                        <label for="star-5" title="Оценка «5»"></label>	
+                        <input type="radio" id="star-4" name="rating" value="4">
+                        <label for="star-4" title="Оценка «4»"></label>    
+                        <input type="radio" id="star-3" name="rating" value="3">
+                        <label for="star-3" title="Оценка «3»"></label>  
+                        <input type="radio" id="star-2" name="rating" value="2">
+                        <label for="star-2" title="Оценка «2»"></label>    
+                        <input type="radio" id="star-1" name="rating" value="1">
+                        <label for="star-1" title="Оценка «1»"></label>
+                    </div>
+                </section>
+                <p class="footer__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+                <a class="footer__link" href="#">Web Design — Direct Line Development</a>
+            </div>
         </div>
     </footer>
     <div class="popup">
         <form class="popup__form">
             <ul class="popup__list">
-                <label for="input__name" class="input__label">Name</label>
-                <input class="input__name" type="text" id="input__name" placeholder="Ivan Ivanov">
+                <li>
+                    <label for="input__name" class="input__label">Name</label>
+                    <input class="input__name" type="text" id="input__name" placeholder="Ivan Ivanov">
+                </li>
                 <li class="popup__list_items">
                     <label for="input__phone" class="input__label">Phone</label>
                     <input type="tel" class="input__phone" id="input__phone">
@@ -235,15 +266,17 @@
                     <label for="input__email" class="input__label">Email</label>
                     <input type="text" class="input__email" id="input__email">
                 </li>
-                <label for="input__msg" class="input__label">Message</label>
-                    <textarea name="Message" id="input__msg" cols="30" rows="10"></textarea>
-                <div class="checkbox__input">
-                    <input type="checkbox" class="input__check" id="input__check">
-                    <label for="input__check" class="input__label">By clicking on the button, you consent to the processing of your personal data</label>
-                </div>
-                <button class="button__submit" type="submit">submit</button>
+                <li>
+                    <label for="input__msg" class="input__label">Message</label>
+                        <textarea name="Message" id="input__msg" cols="30" rows="10"></textarea>
+                    <div class="checkbox__input">
+                        <input type="checkbox" class="input__check" id="input__check">
+                        <label for="input__check" class="input__label">By clicking on the button, you consent to the processing of your personal data</label>
+                    </div>
+                    <button class="button__submit" type="submit">submit</button>
+                </li>
             </ul>
-            <img src="/static/icons/close.svg" alt="" class="popap__close">
+            <img src="/static/icons/close.svg" alt="" class="popap__close" width="15" height="15">
         </form>
     </div>
     <script src="/js/index.js"></script>

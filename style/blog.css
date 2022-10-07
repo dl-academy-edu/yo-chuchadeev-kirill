@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* стили для мейн блог */
 
 h3 {
@@ -22,6 +29,7 @@ h3 {
     font-family: 'Crimson Text';
     font-size: 20px;
     font-style: italic;
+    color: #1E0606;
 }
 
 .active {
@@ -33,8 +41,11 @@ h3 {
 }
 
 .blog__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 30px;
     gap: 20px;
@@ -50,32 +61,45 @@ h3 {
     margin-bottom: 7px;
 }
 
-.blog__title {
+.blog__link {
     font-family: 'Montserrat';
     font-size: 24px;
-    margin-bottom: 15px;
+    color: #1E0606;
+    font-weight: 700;
     line-height: 31px;
 }
 
+.blog__link:hover {
+    -webkit-text-decoration: underline solid 1px;
+            text-decoration: underline solid 1px;
+    cursor: pointer;
+}
+
 .blog__info {
+    margin-top: 15px;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 20px;
 }
 
 .pages{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    /* margin: 0px 113px 60px 113px; */
+    margin: 0px 113px 60px 113px;
     vertical-align: middle;
-
 }
 
 .pages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 64px;
     margin-left: 467px;
     margin-right: 467px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .pages__list_items {
@@ -85,9 +109,17 @@ h3 {
     font-family: 'Montserrat';
 }
 
-.pages_active {
+.pages_active a {
     color: #C29974;
     font-weight: 700;
     font-size: 16px;
     font-family: 'Montserrat';
+}
+
+.pages__list_items a {
+    color: #1E0606;
+}
+
+.pages__list_items a:hover {
+    color: #AAAAAA;
 }
